@@ -18,19 +18,36 @@ cities.forEach((city) => {
 
 //3. Submit the output format by adding comments to the code. 
 
+/*ST. LOUIS
+SANTA ROSA
+CHICAGO
+PUNTARENAS
+BEND */
 
 /*Task 2: Transforming with map() 
 1. Create an array called numbers with the numbers 1-5. */
 
+let numbers = [1,2,3,4,5];
 
 //2. Use map( ) to create an array where each number is squared. Call this array squares. 
 
+let squares = numbers.map((num) => num ** 2);
 
 //3. Log the new array.  
 
+squares.forEach((square) => {
+   console.log(square); // logs each square number to the console
+});
 
 //4. Submit the output by adding comments to the code. 
 
+/*
+1
+4
+9
+16
+25
+*/
 
 /*Task 3: Filtering with filter() 
 1. Create an array called scores containing the numbers 85, 42, 90, 75, 30, and 
