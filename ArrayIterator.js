@@ -12,6 +12,7 @@ let cities = ["St. Louis", "Santa Rosa", "Chicago", "Puntarenas", "Bend"];
 
 //2. Use forEach( ) to log each city name to the console in uppercase. 
 
+console.log("Cities: ");
 cities.forEach((city) => {
    console.log(city.toUpperCase()); // logs each city to the console in uppercase
 });
@@ -35,6 +36,7 @@ let squares = numbers.map((num) => num ** 2);
 
 //3. Log the new array.  
 
+console.log("Squared numbers: ");
 squares.forEach((square) => {
    console.log(square); // logs each square number to the console
 });
@@ -53,15 +55,27 @@ squares.forEach((square) => {
 1. Create an array called scores containing the numbers 85, 42, 90, 75, 30, and 
 100. */
 
+let scores = [85, 42, 90, 75, 30, 100];
 
 //2. Use filter ( ) to create a new array containing only the scores greater than or 
 //equal to 80. Call this array highScores. 
 
+let highScores = scores.filter(score => score >= 80);
 
 //3. Log the new array. 
 
+console.log("High scores: ");
+highScores.forEach((highScore) => {
+   console.log(highScore); // logs each high score to the console
+});
 
 //4. Submit the output by adding comments to the code. 
+
+/*
+85
+90
+100
+*/
 
 /*Task 4: Finding with find() and findIndex() 
 1. Create an array called favoriteFood that contains a list of your favorite 
