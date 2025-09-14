@@ -81,10 +81,15 @@ highScores.forEach((highScore) => {
 1. Create an array called favoriteFood that contains a list of your favorite 
 dishes. Try to add 5 or 6 elements. */
 
+let favoriteFoods = ["chicken", "potatoes", "beans", "pasta", "filet mignon", "lemon bars"];
 
 //2. Use find() to locate the first food with more than 4 letters. 
 
-
+console.log("First favorite food with more than 4 letters: ")
+let firstFoodMoreThanFour = favoriteFoods.find(favorite => favorite.length > 4);
+console.log(firstFoodMoreThanFour);
 
 /*3. Use findIndex( ) to find the index of that fruit. */
+console.log("Index number of the first favorite food with more than 4 letters: ");
+console.log(favoriteFoods.findIndex(favorite => favorite.length > 4));
 
